@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reading Skills Clinic | O Level English Language 1123 | Sir Asif Ali</title>
+  <meta name="description" content="O Level English 1123 reading skills clinic for inference, evidence, vocabulary, command words, summary selection and writer&#x27;s effect.">
+  <meta name="keywords" content="O Level English reading skills, inference, evidence, command words, vocabulary in context, Cambridge 1123">
+  <meta name="author" content="Sir Asif Ali">
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    :root {
+      --accent:#10b981;
+      --soft-accent:#dcfce7;
+      --hero-mid:#064e3b;
+      --hero-glow:rgba(16,185,129,.28);
+    }
+  </style>
+
+  
+  <style>
+    body { background:#f8fafc; }
+    .page-hero {
+      background:
+        radial-gradient(circle at top right, rgba(245,158,11,.24), transparent 32%),
+        radial-gradient(circle at bottom left, var(--hero-glow), transparent 36%),
+        linear-gradient(135deg, #071a3d 0%, var(--hero-mid) 56%, #1e3a8a 100%);
+      color:#ffffff;
+      padding:92px 0 72px;
+      position:relative;
+      overflow:hidden;
+    }
+    .page-hero::after {
+      content:"";
+      position:absolute;
+      width:420px;
+      height:420px;
+      right:-180px;
+      bottom:-200px;
+      background:rgba(255,255,255,.08);
+      border-radius:50%;
+    }
+    .page-hero-grid {
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:42px;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+    .breadcrumb {
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-bottom:18px;
+      font-weight:800;
+      font-size:.88rem;
+      color:#dbeafe;
+    }
+    .breadcrumb a { color:#fde68a; }
+    .page-hero h1 {
+      font-size:clamp(2.35rem,4.6vw,4.35rem);
+      line-height:1.05;
+      letter-spacing:-1.4px;
+      margin-bottom:20px;
+    }
+    .page-hero p {
+      color:#e0f2fe;
+      font-size:1.12rem;
+      max-width:780px;
+    }
+    .hero-badges {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:24px;
+    }
+    .hero-badges span {
+      background:rgba(255,255,255,.11);
+      border:1px solid rgba(255,255,255,.22);
+      color:#ffffff;
+      padding:8px 13px;
+      border-radius:999px;
+      font-size:.9rem;
+      font-weight:800;
+    }
+    .snapshot-box {
+      background:rgba(255,255,255,.11);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:28px;
+      padding:28px;
+      box-shadow:0 24px 60px rgba(0,0,0,.24);
+      backdrop-filter:blur(12px);
+    }
+    .snapshot-box h2 { margin-bottom:18px; font-size:1.45rem; }
+    .snapshot-row {
+      display:grid;
+      grid-template-columns:105px 1fr;
+      gap:14px;
+      padding:14px 0;
+      border-bottom:1px solid rgba(255,255,255,.16);
+    }
+    .snapshot-row:last-child { border-bottom:none; }
+    .snapshot-row strong { color:#fbbf24; font-size:1.05rem; }
+    .snapshot-row span { color:#f3f4f6; font-weight:700; }
+    .premium-section { padding:82px 0; }
+    .premium-heading {
+      text-align:center;
+      max-width:900px;
+      margin:0 auto 46px;
+    }
+    .premium-heading .label {
+      display:inline-flex;
+      color:#f59e0b;
+      font-weight:900;
+      text-transform:uppercase;
+      font-size:.78rem;
+      letter-spacing:1.4px;
+      margin-bottom:12px;
+    }
+    .premium-heading h2 {
+      color:#071a3d;
+      font-size:clamp(2rem,3vw,3rem);
+      line-height:1.15;
+      margin-bottom:14px;
+    }
+    .premium-heading p {
+      color:#64748b;
+      font-size:1.05rem;
+    }
+    .premium-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+    .premium-card {
+      background:#ffffff;
+      border:1px solid #e5e7eb;
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 16px 35px rgba(15,23,42,.08);
+      position:relative;
+      overflow:hidden;
+      transition:.28s ease;
+    }
+    .premium-card:hover {
+      transform:translateY(-6px);
+      box-shadow:0 24px 60px rgba(15,23,42,.16);
+    }
+    .premium-card::before {
+      content:"";
+      position:absolute;
+      top:-60px;
+      right:-60px;
+      width:135px;
+      height:135px;
+      background:var(--soft-accent);
+      border-radius:50%;
+    }
+    .premium-card .icon {
+      width:58px;
+      height:58px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#071a3d,var(--accent));
+      color:#ffffff;
+      font-size:1.65rem;
+      margin-bottom:18px;
+      position:relative;
+      z-index:2;
+    }
+    .premium-card h3 {
+      color:#071a3d;
+      margin-bottom:10px;
+      font-size:1.25rem;
+      position:relative;
+      z-index:2;
+    }
+    .premium-card p {
+      color:#64748b;
+      position:relative;
+      z-index:2;
+      margin-bottom:14px;
+    }
+    .premium-card ul {
+      position:relative;
+      z-index:2;
+      padding-left:0;
+      margin-top:10px;
+    }
+    .premium-card li {
+      color:#64748b;
+      margin:10px 0;
+      list-style:none;
+      padding-left:26px;
+      position:relative;
+    }
+    .premium-card li::before {
+      content:"✓";
+      position:absolute;
+      left:0;
+      color:var(--accent);
+      font-weight:900;
+    }
+    .link-card {
+      display:block;
+      background:#ffffff;
+      border-radius:24px;
+      padding:28px;
+      min-height:230px;
+      color:#ffffff;
+      position:relative;
+      overflow:hidden;
+      box-shadow:0 18px 42px rgba(15,23,42,.18);
+      transition:.28s ease;
+    }
+    .link-card::before {
+      content:"";
+      position:absolute;
+      top:-55px;
+      right:-55px;
+      width:145px;
+      height:145px;
+      background:rgba(255,255,255,.18);
+      border-radius:50%;
+    }
+    .link-card h3,.link-card p,.link-card span {
+      position:relative;
+      z-index:2;
+    }
+    .link-card h3 {
+      color:#ffffff;
+      font-size:1.35rem;
+      margin-bottom:12px;
+    }
+    .link-card p { color:rgba(255,255,255,.92); margin-bottom:16px; }
+    .link-card span { color:#fde68a; font-weight:900; }
+    .link-card:hover { transform:translateY(-8px); box-shadow:0 24px 60px rgba(15,23,42,.25); }
+    .blue { background:linear-gradient(135deg,#071a3d,#2563eb); }
+    .orange { background:linear-gradient(135deg,#7c2d12,#f97316); }
+    .green { background:linear-gradient(135deg,#064e3b,#10b981); }
+    .purple { background:linear-gradient(135deg,#581c87,#a855f7); }
+    .red { background:linear-gradient(135deg,#7f1d1d,#ef4444); }
+    .teal { background:linear-gradient(135deg,#134e4a,#14b8a6); }
+    .indigo { background:linear-gradient(135deg,#312e81,#6366f1); }
+    .slate { background:linear-gradient(135deg,#0f172a,#475569); }
+    .method-box {
+      background:#ffffff;
+      border:1px solid #e5e7eb;
+      border-radius:30px;
+      overflow:hidden;
+      box-shadow:0 20px 50px rgba(15,23,42,.1);
+    }
+    .method-row {
+      display:grid;
+      grid-template-columns:96px 1fr;
+      gap:22px;
+      padding:28px;
+      border-bottom:1px solid #e5e7eb;
+    }
+    .method-row:last-child { border-bottom:none; }
+    .method-no {
+      width:70px;
+      height:70px;
+      border-radius:22px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#f59e0b,#f97316);
+      color:#071a3d;
+      font-size:1.55rem;
+      font-weight:1000;
+    }
+    .method-row h3 { color:#071a3d; margin-bottom:8px; }
+    .method-row p { color:#64748b; }
+    .notice-box {
+      background:#fff7ed;
+      border:1px solid #fed7aa;
+      color:#7c2d12;
+      border-radius:24px;
+      padding:26px;
+      margin-top:24px;
+      box-shadow:0 12px 30px rgba(15,23,42,.06);
+    }
+    .notice-box h3 { margin-bottom:10px; color:#7c2d12; }
+    .notice-box p { color:#7c2d12; }
+    .two-col {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      align-items:start;
+    }
+    .mini-list {
+      background:#ffffff;
+      border:1px solid #e5e7eb;
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 16px 35px rgba(15,23,42,.08);
+    }
+    .mini-list h3 { color:#071a3d; margin-bottom:16px; }
+    .mini-list li {
+      list-style:none;
+      position:relative;
+      padding-left:28px;
+      color:#64748b;
+      margin:12px 0;
+    }
+    .mini-list li::before {
+      content:"★";
+      position:absolute;
+      left:0;
+      color:#f59e0b;
+      font-size:.85rem;
+      top:3px;
+    }
+    @media(max-width:980px) {
+      .page-hero-grid,.premium-grid,.two-col { grid-template-columns:1fr; }
+      .premium-grid.resources-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:640px) {
+      .premium-grid.resources-grid { grid-template-columns:1fr; }
+      .method-row { grid-template-columns:1fr; }
+      .page-hero { padding:70px 0 54px; }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">EA</span>
+        <span class="logo-text">
+          <strong>English 1123</strong>
+          <small>with Sir Asif Ali</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="paper-1-reading.html">Paper 1</a>
+        <a href="paper-2-writing.html">Paper 2</a>
+        <a href="reading-skills.html">Reading Skills</a>
+        <a href="writing-skills.html">Writing Skills</a>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span>Reading Skills</span>
+          </div>
+          <span class="eyebrow">Skill Clinic • Reading</span>
+          <h1>Reading Skills Clinic for O Level English 1123</h1>
+          <p>A focused reading-skills hub for students who struggle with inference, evidence, own words, writer’s effect and summary selection.</p>
+          <div class="hero-badges"><span>Inference</span><span>Evidence</span><span>Own Words</span><span>Command Words</span><span>Vocabulary</span><span>Summary</span></div>
+          <div class="hero-buttons" style="margin-top:28px;">
+            <a href="paper-1-reading.html" class="btn btn-primary">Open Paper 1 Roadmap</a>
+            <a href="contact.html" class="btn btn-secondary">Book Free Trial</a>
+          </div>
+        </div>
+        <aside class="snapshot-box">
+          <h2>Clinic Focus</h2>
+          <div class="snapshot-row"><strong>Main Skill</strong><span>Reading</span></div>
+<div class="snapshot-row"><strong>Best For</strong><span>Weak to A* improvement</span></div>
+<div class="snapshot-row"><strong>Focus</strong><span>Question types</span></div>
+<div class="snapshot-row"><strong>Practice</strong><span>Short and regular</span></div>
+<div class="snapshot-row"><strong>Goal</strong><span>Accurate understanding</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="premium-section">
+      <div class="container">
+        <div class="premium-heading">
+          <span class="label">Reading Foundations</span>
+          <h2>Core Reading Skills Students Need</h2>
+          <p>Reading marks improve when students learn the skill behind each question type.</p>
+        </div>
+        <div class="premium-grid">
+          <article class="premium-card">
+            <div class="icon">📘</div>
+            <h3>Inference</h3>
+            <p>Understand what is suggested, not only stated.</p>
+            <ul><li>Use clues from action and tone.</li><li>Avoid unsupported guesses.</li><li>Explain the logic behind the answer.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">✍️</div>
+            <h3>Evidence Selection</h3>
+            <p>Choose the most useful proof from the passage.</p>
+            <ul><li>Use short details.</li><li>Avoid whole-line copying.</li><li>Match evidence to the question.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">🎯</div>
+            <h3>Own Words</h3>
+            <p>Paraphrase meaning accurately.</p>
+            <ul><li>Change key words, not just small words.</li><li>Keep original meaning unchanged.</li><li>Use simple accurate vocabulary.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">✨</div>
+            <h3>Vocabulary in Context</h3>
+            <p>Work out meaning from surrounding words.</p>
+            <ul><li>Read before and after the word.</li><li>Notice tone and situation.</li><li>Avoid dictionary-only guessing.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">🧠</div>
+            <h3>Command Words</h3>
+            <p>Know what identify, explain, why and how require.</p>
+            <ul><li>Different command words need different answers.</li><li>Underline the task word.</li><li>Answer exactly what is asked.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">📌</div>
+            <h3>Summary Selection</h3>
+            <p>Separate main points from examples.</p>
+            <ul><li>Ignore repetition.</li><li>Select only relevant content.</li><li>Condense without losing meaning.</li></ul>
+          </article></div>
+      </div>
+    </section>
+
+    <section class="premium-section soft-bg">
+      <div class="container">
+        <div class="premium-heading">
+          <span class="label">Reading Pathway</span>
+          <h2>Open Reading Lessons</h2>
+          <p>These pages train the most important Paper 1 skills.</p>
+        </div>
+        <div class="premium-grid resources-grid">
+          <a href="paper-1-reading.html" class="link-card blue">
+            <h3>Paper 1 Reading</h3>
+            <p>Full reading paper roadmap and strategy.</p>
+            <span>Open Roadmap →</span>
+          </a>
+          <a href="notes/paper-1/comprehension.html" class="link-card orange">
+            <h3>Comprehension</h3>
+            <p>Explicit meaning, inference and evidence.</p>
+            <span>Open Notes →</span>
+          </a>
+          <a href="notes/paper-1/writers-effect.html" class="link-card green">
+            <h3>Writer&#x27;s Effect</h3>
+            <p>Powerful words, imagery and effects.</p>
+            <span>Open Notes →</span>
+          </a>
+          <a href="notes/paper-1/summary-writing.html" class="link-card purple">
+            <h3>Summary Writing</h3>
+            <p>Selection and concise expression.</p>
+            <span>Open Notes →</span>
+          </a>
+          <a href="notes/paper-1/short-response.html" class="link-card red">
+            <h3>Short Response</h3>
+            <p>Attitude, viewpoint and precise explanation.</p>
+            <span>Open Notes →</span>
+          </a></div>
+      </div>
+    </section>
+
+    <section class="premium-section">
+      <div class="container">
+        <div class="premium-heading">
+          <span class="label">Skill Training Method</span>
+          <h2>How to Improve Reading Step by Step</h2>
+          <p>Reading improvement should be targeted, not random.</p>
+        </div>
+        <div class="method-box">
+          <div class="method-row">
+            <div class="method-no">1</div>
+            <div>
+              <h3>Diagnose Weakness</h3>
+              <p>Check whether the student loses marks in inference, selection, vocabulary or explanation.</p>
+            </div>
+          </div>
+          <div class="method-row">
+            <div class="method-no">2</div>
+            <div>
+              <h3>Practise One Skill</h3>
+              <p>Do not practise all question types at once in the beginning.</p>
+            </div>
+          </div>
+          <div class="method-row">
+            <div class="method-no">3</div>
+            <div>
+              <h3>Compare Answers</h3>
+              <p>Show weak, average and A* answers side by side.</p>
+            </div>
+          </div>
+          <div class="method-row">
+            <div class="method-no">4</div>
+            <div>
+              <h3>Rewrite Responses</h3>
+              <p>Improve weak answers by adding precision and evidence.</p>
+            </div>
+          </div>
+          <div class="method-row">
+            <div class="method-no">5</div>
+            <div>
+              <h3>Track Progress</h3>
+              <p>Keep a list of repeated mistakes and fix them weekly.</p>
+            </div>
+          </div></div>
+      </div>
+    </section>
+
+    <section class="premium-section soft-bg">
+      <div class="container">
+        <div class="premium-heading">
+          <span class="label">Student Guidance</span>
+          <h2>Reading Problems and Solutions</h2>
+          <p>Every reading weakness has a teachable solution.</p>
+        </div>
+        <div class="two-col">
+          
+        <div class="mini-list">
+          <h3>Common Problems</h3>
+          <ul><li>Cannot infer hidden meaning.</li><li>Copies too much from passage.</li><li>Misunderstands command words.</li><li>Uses vague vocabulary.</li><li>Writes too much in short answers.</li></ul>
+        </div>
+          
+        <div class="mini-list">
+          <h3>Solutions</h3>
+          <ul><li>Practise clue-based inference.</li><li>Use short quotations only.</li><li>Learn command word meanings.</li><li>Build attitude vocabulary.</li><li>Answer in one or two focused sentences.</li></ul>
+        </div>
+        </div>
+        <div class="notice-box">
+          <h3>Teacher Tip</h3>
+          <p>Reading skills become strong when students stop asking &#x27;Where is the answer?&#x27; and start asking &#x27;Which clue proves the answer?&#x27;</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trial-section">
+      <div class="container trial-box">
+        <div>
+          <span class="section-kicker light">Need a Clear Study Plan?</span>
+          <h2>Book a Free O Level English 1123 Trial Class</h2>
+          <p>Get a guided diagnosis of reading, writing, vocabulary and exam-technique weaknesses.</p>
+        </div>
+        <div class="trial-actions">
+          <a href="https://wa.me/923000000000" class="btn btn-light" target="_blank" rel="noopener">Contact on WhatsApp</a>
+          <a href="mailto:your-email@example.com" class="btn btn-outline-light">Send Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>English 1123 with Sir Asif Ali</h3>
+        <p>Independent Cambridge O Level English Language preparation for reading, writing, past papers and exam skills.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="paper-1-reading.html">Paper 1 Reading</a>
+        <a href="paper-2-writing.html">Paper 2 Writing</a>
+        <a href="reading-skills.html">Reading Skills</a>
+        <a href="writing-skills.html">Writing Skills</a>
+      </div>
+      <div>
+        <h4>Student Support</h4>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Book Trial</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Sir Asif Ali English Language 1123. All rights reserved.</p>
+      <p>This website provides independent tutoring and exam preparation support. It is not officially affiliated with Cambridge Assessment International Education.</p>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
