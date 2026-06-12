@@ -1,65 +1,12 @@
-.btn {
-display: inline-block;
-padding: 14px 30px;
-border-radius: 50px;
-font-weight: 700;
-font-size: 1rem;
-letter-spacing: 0.5px;
-border: none;
-cursor: pointer;
-transition: all 0.35s ease;
-text-align: center;
-position: relative;
-overflow: hidden;
-}
-
-/* Blue → Purple Premium Button */
-.btn-primary {
-background: linear-gradient(
-135deg,
-#2563EB 0%,
-#4F46E5 50%,
-#7C3AED 100%
-);
-color: white;
-box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
-}
-
-.btn-primary:hover {
-transform: translateY(-4px) scale(1.03);
-box-shadow: 0 18px 35px rgba(79, 70, 229, 0.45);
-}
-
-/* Orange → Pink CTA Button */
-.btn-secondary {
-background: linear-gradient(
-135deg,
-#F59E0B 0%,
-#F97316 50%,
-#EC4899 100%
-);
-color: white;
-box-shadow: 0 10px 25px rgba(249, 115, 22, 0.35);
-}
-
-.btn-secondary:hover {
-transform: translateY(-4px) scale(1.03);
-box-shadow: 0 18px 35px rgba(236, 72, 153, 0.45);
-}
-
-/* Outline Button */
-.btn-outline {
-border: 2px solid #2563EB;
-color: #2563EB;
-background: transparent;
-}
-
-.btn-outline:hover {
-background: linear-gradient(
-135deg,
-#2563EB,
-#7C3AED
-);
-color: white;
-border-color: transparent;
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #041e42 0%,
+        #0b3d91 45%,
+        #0d9488 100%
+    );
+    color: white;
+    display: flex;
+    align-items: center;
 }
