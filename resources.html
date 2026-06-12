@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Free Resources Hub | O Level English Language 1123 | Sir Asif Ali</title>
+  <meta name="description" content="O Level English 1123 resources hub with worksheets, vocabulary banks, writing templates, reading checklists and practice plans.">
+  <meta name="keywords" content="O Level English 1123 resources, worksheets, vocabulary bank, writing templates, reading checklist, English 1123 notes">
+  <meta name="author" content="Sir Asif Ali">
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    :root {
+      --accent:#14b8a6;
+      --soft-accent:#ccfbf1;
+      --hero-mid:#134e4a;
+      --hero-glow:rgba(20,184,166,.28);
+    }
+  </style>
+
+  
+  <style>
+    body { background:#f8fafc; }
+    .page-hero {
+      background:
+        radial-gradient(circle at top right, rgba(245,158,11,.24), transparent 32%),
+        radial-gradient(circle at bottom left, var(--hero-glow), transparent 36%),
+        linear-gradient(135deg, #071a3d 0%, var(--hero-mid) 56%, #1e3a8a 100%);
+      color:#ffffff;
+      padding:92px 0 72px;
+      position:relative;
+      overflow:hidden;
+    }
+    .page-hero::after {
+      content:"";
+      position:absolute;
+      width:420px;
+      height:420px;
+      right:-180px;
+      bottom:-200px;
+      background:rgba(255,255,255,.08);
+      border-radius:50%;
+    }
+    .page-hero-grid {
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:42px;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+    .breadcrumb {
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-bottom:18px;
+      font-weight:800;
+      font-size:.88rem;
+      color:#dbeafe;
+    }
+    .breadcrumb a { color:#fde68a; }
+    .page-hero h1 {
+      font-size:clamp(2.35rem,4.6vw,4.35rem);
+      line-height:1.05;
+      letter-spacing:-1.4px;
+      margin-bottom:20px;
+    }
+    .page-hero p {
+      color:#e0f2fe;
+      font-size:1.12rem;
+      max-width:780px;
+    }
+    .hero-badges {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:24px;
+    }
+    .hero-badges span {
+      background:rgba(255,255,255,.11);
+      border:1px solid rgba(255,255,255,.22);
+      color:#ffffff;
+      padding:8px 13px;
+      border-radius:999px;
+      font-size:.9rem;
+      font-weight:800;
+    }
+    .snapshot-box {
+      background:rgba(255,255,255,.11);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:28px;
+      padding:28px;
+      box-shadow:0 24px 60px rgba(0,0,0,.24);
+      backdrop-filter:blur(12px);
+    }
+    .snapshot-box h2 { margin-bottom:18px; font-size:1.45rem; }
+    .snapshot-row {
+      display:grid;
+      grid-template-columns:105px 1fr;
+      gap:14px;
+      padding:14px 0;
+      border-bottom:1px solid rgba(255,255,255,.16);
+    }
+    .snapshot-row:last-child { border-bottom:none; }
+    .snapshot-row strong { color:#fbbf24; font-size:1.05rem; }
+    .snapshot-row span { color:#f3f4f6; font-weight:700; }
+    .premium-section { padding:82px 0; }
+    .premium-heading {
+      text-align:center;
+      max-width:900px;
+      margin:0 auto 46px;
+    }
+    .premium-heading .label {
+      display:inline-flex;
+      color:#f59e0b;
+      font-weight:900;
+      text-transform:uppercase;
+      font-size:.78rem;
+      letter-spacing:1.4px;
+      margin-bottom:12px;
+    }
+    .premium-heading h2 {
+      color:#071a3d;
+      font-size:clamp(2rem,3vw,3rem);
+      line-height:1.15;
+      margin-bottom:14px;
+    }
+    .premium-heading p {
+      color:#64748b;
+      font-size:1.05rem;
+    }
+    .premium-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+    .premium-card {
+      background:#ffffff;
+      border:1px solid #e5e7eb;
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 16px 35px rgba(15,23,42,.08);
+      position:relative;
+      overflow:hidden;
+      transition:.28s ease;
+    }
+    .premium-card:hover {
+      transform:translateY(-6px);
+      box-shadow:0 24px 60px rgba(15,23,42,.16);
+    }
+    .premium-card::before {
+      content:"";
+      position:absolute;
+      top:-60px;
+      right:-60px;
+      width:135px;
+      height:135px;
+      background:var(--soft-accent);
+      border-radius:50%;
+    }
+    .premium-card .icon {
+      width:58px;
+      height:58px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#071a3d,var(--accent));
+      color:#ffffff;
+      font-size:1.65rem;
+      margin-bottom:18px;
+      position:relative;
+      z-index:2;
+    }
+    .premium-card h3 {
+      color:#071a3d;
+      margin-bottom:10px;
+      font-size:1.25rem;
+      position:relative;
+      z-index:2;
+    }
+    .premium-card p {
+      color:#64748b;
+      position:relative;
+      z-index:2;
+      margin-bottom:14px;
+    }
+    .premium-card ul {
+      position:relative;
+      z-index:2;
+      padding-left:0;
+      margin-top:10px;
+    }
+    .premium-card li {
+      color:#64748b;
+      margin:10px 0;
+      list-style:none;
+      padding-left:26px;
+      position:relative;
+    }
+    .premium-card li::before {
+      content:"✓";
+      position:absolute;
+      left:0;
+      color:var(--accent);
+      font-weight:900;
+    }
+    .link-card {
+      display:block;
+      background:#ffffff;
+      border-radius:24px;
+      padding:28px;
+      min-height:230px;
+      color:#ffffff;
+      position:relative;
+      overflow:hidden;
+      box-shadow:0 18px 42px rgba(15,23,42,.18);
+      transition:.28s ease;
+    }
+    .link-card::before {
+      content:"";
+      position:absolute;
+      top:-55px;
+      right:-55px;
+      width:145px;
+      height:145px;
+      background:rgba(255,255,255,.18);
+      border-radius:50%;
+    }
+    .link-card h3,.link-card p,.link-card span {
+      position:relative;
+      z-index:2;
+    }
+    .link-card h3 {
+      color:#ffffff;
+      font-size:1.35rem;
+      margin-bottom:12px;
+    }
+    .link-card p { color:rgba(255,255,255,.92); margin-bottom:16px; }
+    .link-card span { color:#fde68a; font-weight:900; }
+    .link-card:hover { transform:translateY(-8px); box-shadow:0 24px 60px rgba(15,23,42,.25); }
+    .blue { background:linear-gradient(135deg,#071a3d,#2563eb); }
+    .orange { background:linear-gradient(135deg,#7c2d12,#f97316); }
+    .green { background:linear-gradient(135deg,#064e3b,#10b981); }
+    .purple { background:linear-gradient(135deg,#581c87,#a855f7); }
+    .red { background:linear-gradient(135deg,#7f1d1d,#ef4444); }
+    .teal { background:linear-gradient(135deg,#134e4a,#14b8a6); }
+    .indigo { background:linear-gradient(135deg,#312e81,#6366f1); }
+    .slate { background:linear-gradient(135deg,#0f172a,#475569); }
+    .method-box {
+      background:#ffffff;
+      border:1px solid #e5e7eb;
+      border-radius:30px;
+      overflow:hidden;
+      box-shadow:0 20px 50px rgba(15,23,42,.1);
+    }
+    .method-row {
+      display:grid;
+      grid-template-columns:96px 1fr;
+      gap:22px;
+      padding:28px;
+      border-bottom:1px solid #e5e7eb;
+    }
+    .method-row:last-child { border-bottom:none; }
+    .method-no {
+      width:70px;
+      height:70px;
+      border-radius:22px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#f59e0b,#f97316);
+      color:#071a3d;
+      font-size:1.55rem;
+      font-weight:1000;
+    }
+    .method-row h3 { color:#071a3d; margin-bottom:8px; }
+    .method-row p { color:#64748b; }
+    .notice-box {
+      background:#fff7ed;
+      border:1px solid #fed7aa;
+      color:#7c2d12;
+      border-radius:24px;
+      padding:26px;
+      margin-top:24px;
+      box-shadow:0 12px 30px rgba(15,23,42,.06);
+    }
+    .notice-box h3 { margin-bottom:10px; color:#7c2d12; }
+    .notice-box p { color:#7c2d12; }
+    .two-col {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      align-items:start;
+    }
+    .mini-list {
+      background:#ffffff;
+      border:1px solid #e5e7eb;
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 16px 35px rgba(15,23,42,.08);
+    }
+    .mini-list h3 { color:#071a3d; margin-bottom:16px; }
+    .mini-list li {
+      list-style:none;
+      position:relative;
+      padding-left:28px;
+      color:#64748b;
+      margin:12px 0;
+    }
+    .mini-list li::before {
+      content:"★";
+      position:absolute;
+      left:0;
+      color:#f59e0b;
+      font-size:.85rem;
+      top:3px;
+    }
+    @media(max-width:980px) {
+      .page-hero-grid,.premium-grid,.two-col { grid-template-columns:1fr; }
+      .premium-grid.resources-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:640px) {
+      .premium-grid.resources-grid { grid-template-columns:1fr; }
+      .method-row { grid-template-columns:1fr; }
+      .page-hero { padding:70px 0 54px; }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">EA</span>
+        <span class="logo-text">
+          <strong>English 1123</strong>
+          <small>with Sir Asif Ali</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="paper-1-reading.html">Paper 1</a>
+        <a href="paper-2-writing.html">Paper 2</a>
+        <a href="reading-skills.html">Reading Skills</a>
+        <a href="writing-skills.html">Writing Skills</a>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span>Resources</span>
+          </div>
+          <span class="eyebrow">Student Support • Resources</span>
+          <h1>Free Resources for O Level English 1123</h1>
+          <p>A resource hub for worksheets, templates, vocabulary banks, checklists and revision tools to support Paper 1 and Paper 2 preparation.</p>
+          <div class="hero-badges"><span>Worksheets</span><span>Templates</span><span>Vocabulary</span><span>Checklists</span><span>Revision</span><span>Practice</span></div>
+          <div class="hero-buttons" style="margin-top:28px;">
+            <a href="reading-skills.html" class="btn btn-primary">Open Reading Skills</a>
+            <a href="contact.html" class="btn btn-secondary">Book Free Trial</a>
+          </div>
+        </div>
+        <aside class="snapshot-box">
+          <h2>Resource Focus</h2>
+          <div class="snapshot-row"><strong>Type</strong><span>Student support</span></div>
+<div class="snapshot-row"><strong>Paper 1</strong><span>Reading resources</span></div>
+<div class="snapshot-row"><strong>Paper 2</strong><span>Writing resources</span></div>
+<div class="snapshot-row"><strong>Use</strong><span>Revision + practice</span></div>
+<div class="snapshot-row"><strong>Goal</strong><span>Independent improvement</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="premium-section">
+      <div class="container">
+        <div class="premium-heading">
+          <span class="label">Resource Categories</span>
+          <h2>What This Hub Will Contain</h2>
+          <p>Use this page as the central library for downloadable and read-only learning support.</p>
+        </div>
+        <div class="premium-grid">
+          <article class="premium-card">
+            <div class="icon">📘</div>
+            <h3>Reading Checklists</h3>
+            <p>For comprehension and inference practice.</p>
+            <ul><li>Command word checklist.</li><li>Evidence selection checklist.</li><li>Own-word answer checklist.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">✍️</div>
+            <h3>Writing Templates</h3>
+            <p>For directed writing formats.</p>
+            <ul><li>Email and letter structure.</li><li>Report and article layout.</li><li>Speech opening and ending.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">🎯</div>
+            <h3>Vocabulary Banks</h3>
+            <p>For mature expression.</p>
+            <ul><li>Feelings and attitudes.</li><li>Descriptive vocabulary.</li><li>Persuasive phrases.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">✨</div>
+            <h3>Grammar Support</h3>
+            <p>For accuracy improvement.</p>
+            <ul><li>Tense and agreement.</li><li>Punctuation basics.</li><li>Sentence variety.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">🧠</div>
+            <h3>Model Answers</h3>
+            <p>For learning answer quality.</p>
+            <ul><li>Weak vs strong examples.</li><li>Examiner-style comments.</li><li>Improved versions.</li></ul>
+          </article>
+          <article class="premium-card">
+            <div class="icon">📌</div>
+            <h3>Practice Plans</h3>
+            <p>For weekly learning.</p>
+            <ul><li>Paper 1 weekly plan.</li><li>Paper 2 weekly plan.</li><li>Past paper review routine.</li></ul>
+          </article></div>
+      </div>
+    </section>
+
+    <section class="premium-section soft-bg">
+      <div class="container">
+        <div class="premium-heading">
+          <span class="label">Open Learning Areas</span>
+          <h2>Start from These Sections</h2>
+          <p>Use these pages before downloading detailed worksheets.</p>
+        </div>
+        <div class="premium-grid resources-grid">
+          <a href="paper-1-reading.html" class="link-card blue">
+            <h3>Paper 1 Reading</h3>
+            <p>Reading roadmap and topic links.</p>
+            <span>Open →</span>
+          </a>
+          <a href="paper-2-writing.html" class="link-card orange">
+            <h3>Paper 2 Writing</h3>
+            <p>Writing roadmap and topic links.</p>
+            <span>Open →</span>
+          </a>
+          <a href="reading-skills.html" class="link-card green">
+            <h3>Reading Skills</h3>
+            <p>Inference, evidence and summary selection.</p>
+            <span>Open →</span>
+          </a>
+          <a href="writing-skills.html" class="link-card purple">
+            <h3>Writing Skills</h3>
+            <p>Paragraphing, tone and accuracy.</p>
+            <span>Open →</span>
+          </a>
+          <a href="past-papers.html" class="link-card red">
+            <h3>Past Papers</h3>
+            <p>Practice strategy and exam routine.</p>
+            <span>Open →</span>
+          </a></div>
+      </div>
+    </section>
+
+    <section class="premium-section">
+      <div class="container">
+        <div class="premium-heading">
+          <span class="label">Resource Use Method</span>
+          <h2>How Students Should Use Resources</h2>
+          <p>Resources work best when used with a routine.</p>
+        </div>
+        <div class="method-box">
+          <div class="method-row">
+            <div class="method-no">1</div>
+            <div>
+              <h3>Choose One Weakness</h3>
+              <p>Select one skill, not everything at once.</p>
+            </div>
+          </div>
+          <div class="method-row">
+            <div class="method-no">2</div>
+            <div>
+              <h3>Read the Guide</h3>
+              <p>Understand the method before practising.</p>
+            </div>
+          </div>
+          <div class="method-row">
+            <div class="method-no">3</div>
+            <div>
+              <h3>Use the Worksheet</h3>
+              <p>Apply the method immediately.</p>
+            </div>
+          </div>
+          <div class="method-row">
+            <div class="method-no">4</div>
+            <div>
+              <h3>Check with Model</h3>
+              <p>Compare with a strong answer or checklist.</p>
+            </div>
+          </div>
+          <div class="method-row">
+            <div class="method-no">5</div>
+            <div>
+              <h3>Repeat Weekly</h3>
+              <p>Build habits through regular review.</p>
+            </div>
+          </div></div>
+      </div>
+    </section>
+
+    <section class="premium-section soft-bg">
+      <div class="container">
+        <div class="premium-heading">
+          <span class="label">Resource Policy</span>
+          <h2>How to Keep Resources Useful</h2>
+          <p>Resources should be focused, original and student-friendly.</p>
+        </div>
+        <div class="two-col">
+          
+        <div class="mini-list">
+          <h3>Best Resource Types</h3>
+          <ul><li>One-page checklists.</li><li>Short worksheets.</li><li>Model answer comparisons.</li><li>Vocabulary banks.</li><li>Timed practice sheets.</li></ul>
+        </div>
+          
+        <div class="mini-list">
+          <h3>Avoid</h3>
+          <ul><li>Uploading copyrighted books.</li><li>Overloading students with huge files.</li><li>Unverified paper predictions.</li><li>Messy worksheets without answers.</li><li>Resources without teaching purpose.</li></ul>
+        </div>
+        </div>
+        <div class="notice-box">
+          <h3>Teacher Tip</h3>
+          <p>The best resource is not the longest one. It is the one students can actually use, check and improve from.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trial-section">
+      <div class="container trial-box">
+        <div>
+          <span class="section-kicker light">Need a Clear Study Plan?</span>
+          <h2>Book a Free O Level English 1123 Trial Class</h2>
+          <p>Get a guided diagnosis of reading, writing, vocabulary and exam-technique weaknesses.</p>
+        </div>
+        <div class="trial-actions">
+          <a href="https://wa.me/923000000000" class="btn btn-light" target="_blank" rel="noopener">Contact on WhatsApp</a>
+          <a href="mailto:your-email@example.com" class="btn btn-outline-light">Send Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>English 1123 with Sir Asif Ali</h3>
+        <p>Independent Cambridge O Level English Language preparation for reading, writing, past papers and exam skills.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="paper-1-reading.html">Paper 1 Reading</a>
+        <a href="paper-2-writing.html">Paper 2 Writing</a>
+        <a href="reading-skills.html">Reading Skills</a>
+        <a href="writing-skills.html">Writing Skills</a>
+      </div>
+      <div>
+        <h4>Student Support</h4>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Book Trial</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Sir Asif Ali English Language 1123. All rights reserved.</p>
+      <p>This website provides independent tutoring and exam preparation support. It is not officially affiliated with Cambridge Assessment International Education.</p>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
