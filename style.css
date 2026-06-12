@@ -663,3 +663,59 @@ ul {
     width: 100%;
   }
 }
+
+/* Colourful Professional Topic Cards */
+
+.topic-card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  color: #ffffff;
+  min-height: 220px;
+}
+
+.topic-card h3 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+}
+
+.topic-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+/* Different colours for each card */
+.topic-card:nth-child(1) {
+  background: linear-gradient(135deg, #071a3d, #2563eb);
+}
+
+.topic-card:nth-child(2) {
+  background: linear-gradient(135deg, #7c2d12, #f97316);
+}
+
+.topic-card:nth-child(3) {
+  background: linear-gradient(135deg, #064e3b, #10b981);
+}
+
+.topic-card:nth-child(4) {
+  background: linear-gradient(135deg, #581c87, #a855f7);
+}
+
+/* Soft shine effect */
+.topic-card::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+}
+
+/* Hover effect */
+.topic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.25);
+}
