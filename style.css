@@ -761,3 +761,10 @@ ul {
     min-height: 200px;
   }
 }
+
+/* Section Button Area */
+.section-actions {
+  text-align: center;
+  margin-top: -18px;
+  margin-bottom: 34px;
+}
