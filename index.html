@@ -9,26 +9,20 @@
   <meta name="description" content="Professional O Level English Language 1123 preparation website by Sir Asif Ali. Learn Paper 1 Reading, Paper 2 Writing, comprehension, writer's effect, summary writing, directed writing, composition, past papers and exam skills.">
   <meta name="keywords" content="O Level English 1123, English Language 1123, Paper 1 Reading, Paper 2 Writing, Cambridge O Level English, Sir Asif Ali, English tutor">
   <meta name="author" content="Sir Asif Ali">
+  <meta name="theme-color" content="#5b5cf6" />
 
   <link rel="stylesheet" href="style.css" />
   <meta name="google-site-verification" content="Sr_InA4LimV7Q_2dyASb8hrqIHHk5zlQQMIOD74RLLg" />
-
-  <style>
-    .section-actions {
-      text-align: center;
-      margin-top: -18px;
-      margin-bottom: 34px;
-    }
-  </style>
 </head>
 
 <body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
 
   <!-- Header -->
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="container nav-wrapper">
 
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" aria-label="English 1123 home">
         <span class="logo-icon">EA</span>
         <span class="logo-text">
           <strong>English 1123</strong>
@@ -36,12 +30,14 @@
         </span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-        ☰
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html">Home</a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
         <a href="#about">About</a>
         <a href="paper-1-reading.html">Paper 1</a>
         <a href="paper-2-writing.html">Paper 2</a>
@@ -55,14 +51,18 @@
     </div>
   </header>
 
-  <main>
+  <main id="mainContent">
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+      <div class="floating-shape shape-one" aria-hidden="true"></div>
+      <div class="floating-shape shape-two" aria-hidden="true"></div>
+      <div class="floating-shape shape-three" aria-hidden="true"></div>
+
       <div class="container hero-grid">
 
-        <div class="hero-content">
-          <span class="eyebrow">Cambridge O Level English Language 1123</span>
+        <div class="hero-content reveal">
+          <span class="eyebrow">🎓 Cambridge O Level English Language 1123</span>
 
           <h1>Master English 1123 with Confidence, Clarity and Exam Skill</h1>
 
@@ -73,58 +73,68 @@
           </p>
 
           <div class="hero-buttons">
-            <a href="contact.html" class="btn btn-primary">Book Free Trial Class</a>
-            <a href="#course-plan" class="btn btn-secondary">View Course Plan</a>
+            <a href="contact.html" class="btn btn-primary sound-hover">Book Free Trial Class</a>
+            <a href="#course-plan" class="btn btn-secondary sound-hover">View Course Plan</a>
           </div>
 
-          <div class="hero-tags">
-            <span>Paper 1 Reading</span>
-            <span>Paper 2 Writing</span>
-            <span>Past Papers</span>
-            <span>A* Strategy</span>
+          <div class="hero-tags" aria-label="Main course areas">
+            <span>📘 Paper 1 Reading</span>
+            <span>✍️ Paper 2 Writing</span>
+            <span>📝 Past Papers</span>
+            <span>⭐ A* Strategy</span>
           </div>
         </div>
 
-        <div class="hero-card">
-          <h2>What Students Learn</h2>
+        <aside class="hero-card reveal delay-1" aria-label="What students learn">
+          <div class="hero-card-top">
+            <span class="hero-card-icon">🚀</span>
+            <div>
+              <h2>What Students Learn</h2>
+              <p>Clear skills. Better answers. Stronger exam performance.</p>
+            </div>
+          </div>
 
-          <ul>
-            <li>How to answer comprehension questions accurately</li>
-            <li>How to analyse powerful words and writer’s effects</li>
-            <li>How to write concise summaries in own words</li>
-            <li>How to master directed writing formats</li>
-            <li>How to write descriptive and narrative compositions</li>
-            <li>How to improve grammar, vocabulary and style</li>
+          <ul class="learning-list">
+            <li><span>✓</span> How to answer comprehension questions accurately</li>
+            <li><span>✓</span> How to analyse powerful words and writer’s effects</li>
+            <li><span>✓</span> How to write concise summaries in own words</li>
+            <li><span>✓</span> How to master directed writing formats</li>
+            <li><span>✓</span> How to write descriptive and narrative compositions</li>
+            <li><span>✓</span> How to improve grammar, vocabulary and style</li>
           </ul>
 
           <div class="mini-note">
             <strong>Goal:</strong> Build confident, accurate and exam-ready English learners.
           </div>
-        </div>
+        </aside>
 
       </div>
     </section>
 
     <!-- Stats -->
-    <section class="stats-section">
+    <section class="stats-section" aria-label="Course highlights">
       <div class="container stats-grid">
 
-        <div class="stat-card">
+        <div class="stat-card reveal">
+          <span class="stat-icon">📖</span>
           <strong>Paper 1</strong>
           <span>Reading Skills</span>
         </div>
 
-        <div class="stat-card">
+        <div class="stat-card reveal delay-1">
+          <span class="stat-icon">🖊️</span>
           <strong>Paper 2</strong>
           <span>Writing Skills</span>
         </div>
 
-        <div class="stat-card">
+        <div class="stat-card reveal delay-2">
+          <span class="stat-icon">⭐</span>
           <strong>A*</strong>
           <span>Exam Strategy</span>
         </div>
 
-        <div class="stat-card">
+        <div class="stat-card reveal delay-3">
+          <span class="stat-icon">🎯</span>
           <strong>1123</strong>
           <span>Complete Support</span>
         </div>
@@ -136,7 +146,7 @@
     <section class="section" id="course-plan">
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <span class="section-kicker">Course Roadmap</span>
           <h2>Complete O Level English 1123 Preparation Plan</h2>
           <p>
@@ -147,34 +157,34 @@
 
         <div class="cards-grid three">
 
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="card-icon">📘</div>
             <h3>Paper 1 Reading</h3>
             <p>
               Learn comprehension, writer’s effect, summary writing and short-response skills
               through clear methods and guided practice.
             </p>
-            <a href="paper-1-reading.html" class="text-link">Explore Paper 1 →</a>
+            <a href="paper-1-reading.html" class="text-link sound-hover">Explore Paper 1 →</a>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal delay-1">
             <div class="card-icon">✍️</div>
             <h3>Paper 2 Writing</h3>
             <p>
               Master directed writing, composition, descriptive writing, narrative writing,
               language accuracy and audience awareness.
             </p>
-            <a href="paper-2-writing.html" class="text-link">Explore Paper 2 →</a>
+            <a href="paper-2-writing.html" class="text-link sound-hover">Explore Paper 2 →</a>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal delay-2">
             <div class="card-icon">📝</div>
             <h3>Past Paper Practice</h3>
             <p>
               Practise with a focused system: attempt, review, improve and rewrite answers
               using examiner-style feedback.
             </p>
-            <a href="past-papers.html" class="text-link">Practise Past Papers →</a>
+            <a href="past-papers.html" class="text-link sound-hover">Practise Past Papers →</a>
           </article>
 
         </div>
@@ -186,7 +196,7 @@
     <section class="section soft-bg" id="about">
       <div class="container split-grid">
 
-        <div>
+        <div class="reveal">
           <span class="section-kicker">About the Course</span>
           <h2>English 1123 with Sir Asif Ali</h2>
 
@@ -210,8 +220,9 @@
           </div>
         </div>
 
-        <div class="teacher-box">
-          <h3>Teacher’s Focus</h3>
+        <aside class="teacher-box reveal delay-1">
+          <span class="box-badge">Teacher’s Focus</span>
+          <h3>Accuracy + Confidence + Exam Awareness</h3>
           <p>
             The course focuses on accuracy, confidence, exam understanding and gradual improvement.
             Students are trained to avoid vague answers and develop precise, mature English.
@@ -223,7 +234,7 @@
             <li>Guided writing practice</li>
             <li>Feedback-based improvement</li>
           </ul>
-        </div>
+        </aside>
 
       </div>
     </section>
@@ -232,7 +243,7 @@
     <section class="section" id="paper1">
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <span class="section-kicker">Paper 1 Reading</span>
           <h2>Master Reading, Analysis and Summary Skills</h2>
           <p>
@@ -241,30 +252,34 @@
           </p>
         </div>
 
-        <div class="section-actions">
-          <a href="paper-1-reading.html" class="btn btn-primary">
+        <div class="section-actions reveal">
+          <a href="paper-1-reading.html" class="btn btn-primary sound-hover">
             Open Complete Paper 1 Reading Guide
           </a>
         </div>
 
         <div class="cards-grid four">
 
-          <a href="notes/paper-1/comprehension.html" class="topic-card card-blue">
+          <a href="notes/paper-1/comprehension.html" class="topic-card card-blue reveal sound-hover">
+            <span class="topic-icon">🔍</span>
             <h3>Comprehension</h3>
             <p>Understand explicit meaning, implicit meaning, inference and evidence.</p>
           </a>
 
-          <a href="notes/paper-1/writers-effect.html" class="topic-card card-orange">
+          <a href="notes/paper-1/writers-effect.html" class="topic-card card-orange reveal delay-1 sound-hover">
+            <span class="topic-icon">🎨</span>
             <h3>Writer’s Effect</h3>
             <p>Analyse powerful words, phrases, imagery, tone and reader impact.</p>
           </a>
 
-          <a href="notes/paper-1/summary-writing.html" class="topic-card card-green">
+          <a href="notes/paper-1/summary-writing.html" class="topic-card card-green reveal delay-2 sound-hover">
+            <span class="topic-icon">🧠</span>
             <h3>Summary Writing</h3>
             <p>Select key points and write concisely in your own words.</p>
           </a>
 
-          <a href="notes/paper-1/short-response.html" class="topic-card card-purple">
+          <a href="notes/paper-1/short-response.html" class="topic-card card-purple reveal delay-3 sound-hover">
+            <span class="topic-icon">⚡</span>
             <h3>Short Response</h3>
             <p>Answer clearly with precise evidence and explanation.</p>
           </a>
@@ -278,7 +293,7 @@
     <section class="section soft-bg" id="paper2">
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <span class="section-kicker">Paper 2 Writing</span>
           <h2>Improve Directed Writing and Composition</h2>
           <p>
@@ -287,30 +302,34 @@
           </p>
         </div>
 
-        <div class="section-actions">
-          <a href="paper-2-writing.html" class="btn btn-primary">
+        <div class="section-actions reveal">
+          <a href="paper-2-writing.html" class="btn btn-primary sound-hover">
             Open Complete Paper 2 Writing Guide
           </a>
         </div>
 
         <div class="cards-grid four">
 
-          <a href="notes/paper-2/directed-writing.html" class="topic-card card-navy">
+          <a href="notes/paper-2/directed-writing.html" class="topic-card card-navy reveal sound-hover">
+            <span class="topic-icon">📨</span>
             <h3>Directed Writing</h3>
             <p>Learn email, letter, report, article and speech formats.</p>
           </a>
 
-          <a href="notes/paper-2/descriptive-writing.html" class="topic-card card-red">
+          <a href="notes/paper-2/descriptive-writing.html" class="topic-card card-red reveal delay-1 sound-hover">
+            <span class="topic-icon">🌅</span>
             <h3>Descriptive Writing</h3>
             <p>Create atmosphere, imagery and sensory detail.</p>
           </a>
 
-          <a href="notes/paper-2/narrative-writing.html" class="topic-card card-teal">
+          <a href="notes/paper-2/narrative-writing.html" class="topic-card card-teal reveal delay-2 sound-hover">
+            <span class="topic-icon">🎬</span>
             <h3>Narrative Writing</h3>
             <p>Build plot, character, conflict and effective endings.</p>
           </a>
 
-          <a href="notes/paper-2/language-accuracy.html" class="topic-card card-indigo">
+          <a href="notes/paper-2/language-accuracy.html" class="topic-card card-indigo reveal delay-3 sound-hover">
+            <span class="topic-icon">✅</span>
             <h3>Language Accuracy</h3>
             <p>Improve grammar, vocabulary, punctuation and style.</p>
           </a>
@@ -324,7 +343,7 @@
     <section class="section" id="skills">
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <span class="section-kicker">Skill Clinics</span>
           <h2>Focused Support for Weak Areas</h2>
           <p>
@@ -335,19 +354,19 @@
 
         <div class="skills-grid">
 
-          <a href="reading-skills.html" class="skill-item">
+          <a href="reading-skills.html" class="skill-item reveal sound-hover">
             <span>🔍</span>
             <h3>Reading Skills Clinic</h3>
             <p>Inference, evidence, command words, own words and vocabulary in context.</p>
           </a>
 
-          <a href="writing-skills.html" class="skill-item">
+          <a href="writing-skills.html" class="skill-item reveal delay-1 sound-hover">
             <span>✍️</span>
             <h3>Writing Skills Clinic</h3>
             <p>Paragraphing, tone, audience, vocabulary, grammar and proofreading.</p>
           </a>
 
-          <a href="resources.html" class="skill-item">
+          <a href="resources.html" class="skill-item reveal delay-2 sound-hover">
             <span>📚</span>
             <h3>Resource Hub</h3>
             <p>Checklists, templates, vocabulary banks and revision support.</p>
@@ -362,7 +381,7 @@
     <section class="section soft-bg" id="pastpapers">
       <div class="container split-grid">
 
-        <div>
+        <div class="reveal">
           <span class="section-kicker">Past Papers</span>
           <h2>Practise with a Smart System</h2>
 
@@ -380,10 +399,11 @@
             <p>✓ Error log and improvement routine</p>
           </div>
 
-          <a href="past-papers.html" class="btn btn-primary">Start Guided Practice</a>
+          <a href="past-papers.html" class="btn btn-primary sound-hover">Start Guided Practice</a>
         </div>
 
-        <div class="exam-box">
+        <aside class="exam-box reveal delay-1">
+          <span class="box-badge">5-Step Method</span>
           <h3>Past Paper Method</h3>
 
           <ol>
@@ -393,7 +413,7 @@
             <li>Compare weak and strong answers.</li>
             <li>Rewrite the improved answer.</li>
           </ol>
-        </div>
+        </aside>
 
       </div>
     </section>
@@ -402,7 +422,7 @@
     <section class="section" id="resources">
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <span class="section-kicker">Resources</span>
           <h2>Helpful Study Materials</h2>
           <p>
@@ -413,31 +433,31 @@
 
         <div class="cards-grid three">
 
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="card-icon">📄</div>
             <h3>Reading Checklists</h3>
             <p>
               Checklists for comprehension, writer’s effect, inference, evidence and summary selection.
             </p>
-            <a href="resources.html" class="text-link">Open Resources →</a>
+            <a href="resources.html" class="text-link sound-hover">Open Resources →</a>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal delay-1">
             <div class="card-icon">🧾</div>
             <h3>Writing Templates</h3>
             <p>
               Templates for email, letter, report, article, speech, descriptive and narrative writing.
             </p>
-            <a href="resources.html" class="text-link">Open Resources →</a>
+            <a href="resources.html" class="text-link sound-hover">Open Resources →</a>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal delay-2">
             <div class="card-icon">⭐</div>
             <h3>A* Improvement Tools</h3>
             <p>
               Weak vs strong answer comparisons, vocabulary banks and proofreading checklists.
             </p>
-            <a href="resources.html" class="text-link">Open Resources →</a>
+            <a href="resources.html" class="text-link sound-hover">Open Resources →</a>
           </article>
 
         </div>
@@ -449,7 +469,7 @@
     <section class="section soft-bg">
       <div class="container">
 
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <span class="section-kicker">Student Progress</span>
           <h2>What Makes This Course Different?</h2>
           <p>
@@ -460,7 +480,8 @@
 
         <div class="cards-grid three">
 
-          <article class="feature-card">
+          <article class="feature-card reveal">
+            <div class="card-icon">🌱</div>
             <h3>For Weak Students</h3>
             <p>
               Simple methods, clear explanations and step-by-step support help weak students
@@ -468,7 +489,8 @@
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal delay-1">
+            <div class="card-icon">📈</div>
             <h3>For Average Students</h3>
             <p>
               Focused practice and feedback help students move from basic answers to more precise,
@@ -476,7 +498,8 @@
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card reveal delay-2">
+            <div class="card-icon">🏆</div>
             <h3>For A* Students</h3>
             <p>
               Advanced vocabulary, analytical depth, writing polish and examiner-style thinking
@@ -491,7 +514,7 @@
 
     <!-- Trial CTA -->
     <section class="trial-section" id="trial">
-      <div class="container trial-box">
+      <div class="container trial-box reveal">
 
         <div>
           <span class="section-kicker light">Start Learning</span>
@@ -503,8 +526,8 @@
         </div>
 
         <div class="trial-actions">
-          <a href="contact.html" class="btn btn-light">Book Through Contact Page</a>
-          <a href="https://wa.me/923000000000" class="btn btn-outline-light" target="_blank" rel="noopener">
+          <a href="contact.html" class="btn btn-light sound-hover">Book Through Contact Page</a>
+          <a href="https://wa.me/923000000000" class="btn btn-outline-light sound-hover" target="_blank" rel="noopener">
             WhatsApp Now
           </a>
         </div>
@@ -563,6 +586,10 @@
       </p>
     </div>
   </footer>
+
+  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Turn educational sounds on or off" aria-pressed="true">
+    🔊
+  </button>
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     ↑
