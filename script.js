@@ -1,84 +1,188 @@
-/*
-  O Level English Language 1123 Website
-  JavaScript for mobile menu, active links, back-to-top button and year update.
-*/
+/* =========================================================
+   English 1123 Premium UI Interactions
+   Replace your old script.js with this file.
+   ========================================================= */
 
-const menuToggle = document.getElementById("menuToggle");
-const mainNav = document.getElementById("mainNav");
-const backToTop = document.getElementById("backToTop");
-const year = document.getElementById("year");
+(function () {
+  "use strict";
 
-/* Mobile menu */
-if (menuToggle && mainNav) {
-  menuToggle.addEventListener("click", function () {
-    mainNav.classList.toggle("active");
+  const body = document.body;
+  const header = document.getElementById("siteHeader");
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+  const backToTop = document.getElementById("backToTop");
+  const soundToggle = document.getElementById("soundToggle");
+  const year = document.getElementById("year");
 
-    if (mainNav.classList.contains("active")) {
-      menuToggle.textContent = "✕";
-    } else {
-      menuToggle.textContent = "☰";
-    }
+  if (year) year.textContent = new Date().getFullYear();
+
+  /* Sticky header + back to top */
+  const handleScroll = () => {
+    const scrolled = window.scrollY > 30;
+    header?.classList.toggle("scrolled", scrolled);
+    backToTop?.classList.toggle("show", window.scrollY > 450);
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  handleScroll();
+
+  backToTop?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    playTone("up");
   });
-}
 
-/* Close mobile menu after clicking a link */
-const navLinks = document.querySelectorAll(".main-nav a");
+  /* Mobile navigation */
+  const closeMenu = () => {
+    menuToggle?.classList.remove("active");
+    mainNav?.classList.remove("open");
+    body.classList.remove("menu-open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+  };
 
-navLinks.forEach(function (link) {
-  link.addEventListener("click", function () {
-    if (mainNav && mainNav.classList.contains("active")) {
-      mainNav.classList.remove("active");
-      menuToggle.textContent = "☰";
-    }
+  menuToggle?.addEventListener("click", () => {
+    const isOpen = mainNav?.classList.toggle("open");
+    menuToggle.classList.toggle("active", Boolean(isOpen));
+    body.classList.toggle("menu-open", Boolean(isOpen));
+    menuToggle.setAttribute("aria-expanded", String(Boolean(isOpen)));
+    playTone(Boolean(isOpen) ? "open" : "close");
   });
-});
 
-/* Current year in footer */
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+  mainNav?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
 
-/* Back to top button */
-window.addEventListener("scroll", function () {
-  if (!backToTop) return;
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
+  });
 
-  if (window.scrollY > 500) {
-    backToTop.classList.add("show");
+  document.addEventListener("click", (event) => {
+    if (!mainNav || !menuToggle) return;
+    if (!mainNav.classList.contains("open")) return;
+    const clickedInside = mainNav.contains(event.target) || menuToggle.contains(event.target);
+    if (!clickedInside) closeMenu();
+  });
+
+  /* Reveal animation */
+  const revealItems = document.querySelectorAll(".reveal");
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    revealItems.forEach((item) => revealObserver.observe(item));
   } else {
-    backToTop.classList.remove("show");
+    revealItems.forEach((item) => item.classList.add("show"));
   }
-});
 
-if (backToTop) {
-  backToTop.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-}
+  /* Educational sound effects without audio files
+     Browser rule: sound begins after user interaction. */
+  let soundEnabled = localStorage.getItem("english1123Sound") !== "off";
+  let audioContext = null;
+  let lastSoundAt = 0;
 
-/* Smooth highlight for active section */
-const sections = document.querySelectorAll("section[id]");
+  const updateSoundButton = () => {
+    if (!soundToggle) return;
+    soundToggle.textContent = soundEnabled ? "🔊" : "🔇";
+    soundToggle.setAttribute("aria-pressed", String(soundEnabled));
+    soundToggle.title = soundEnabled ? "Educational sounds on" : "Educational sounds off";
+  };
 
-function highlightActiveSection() {
-  const scrollPosition = window.scrollY + 120;
-
-  sections.forEach(function (section) {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
-    const sectionId = section.getAttribute("id");
-
-    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-      navLinks.forEach(function (link) {
-        link.classList.remove("active-link");
-
-        if (link.getAttribute("href") === "#" + sectionId) {
-          link.classList.add("active-link");
-        }
-      });
+  const getAudioContext = () => {
+    if (!audioContext) {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) return null;
+      audioContext = new AudioContext();
     }
-  });
-}
 
-window.addEventListener("scroll", highlightActiveSection);
+    if (audioContext.state === "suspended") {
+      audioContext.resume().catch(() => {});
+    }
+
+    return audioContext;
+  };
+
+  window.playTone = function playTone(type = "click") {
+    if (!soundEnabled) return;
+
+    const now = Date.now();
+    if (now - lastSoundAt < 80) return;
+    lastSoundAt = now;
+
+    const ctx = getAudioContext();
+    if (!ctx) return;
+
+    const tones = {
+      hover: [560, 0.025, 0.018],
+      click: [720, 0.04, 0.028],
+      open: [520, 0.05, 0.032],
+      close: [320, 0.04, 0.025],
+      up: [850, 0.06, 0.035],
+      success: [660, 0.05, 0.03]
+    };
+
+    const [frequency, duration, volume] = tones[type] || tones.click;
+    const oscillator = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    oscillator.type = "sine";
+    oscillator.frequency.value = frequency;
+    gain.gain.setValueAtTime(volume, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + duration);
+
+    oscillator.connect(gain);
+    gain.connect(ctx.destination);
+    oscillator.start(ctx.currentTime);
+    oscillator.stop(ctx.currentTime + duration);
+  };
+
+  soundToggle?.addEventListener("click", () => {
+    soundEnabled = !soundEnabled;
+    localStorage.setItem("english1123Sound", soundEnabled ? "on" : "off");
+    updateSoundButton();
+    if (soundEnabled) playTone("success");
+  });
+
+  updateSoundButton();
+
+  document.querySelectorAll(".sound-hover, .btn, .topic-card, .skill-item, .feature-card").forEach((element) => {
+    element.addEventListener("mouseenter", () => playTone("hover"));
+    element.addEventListener("click", () => playTone("click"));
+  });
+
+  /* Active nav state for same-page sections */
+  const sectionIds = ["home", "about", "course-plan", "paper1", "paper2", "skills", "pastpapers", "resources", "trial"];
+  const sections = sectionIds
+    .map((id) => document.getElementById(id))
+    .filter(Boolean);
+
+  if ("IntersectionObserver" in window && sections.length) {
+    const navLinks = Array.from(document.querySelectorAll(".main-nav a"));
+
+    const activeObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          const id = entry.target.id;
+          navLinks.forEach((link) => {
+            const href = link.getAttribute("href") || "";
+            const matches = href === `#${id}` || (id === "home" && href.endsWith("index.html"));
+            if (matches) link.classList.add("active");
+            else if (href.startsWith("#") || href.endsWith("index.html")) link.classList.remove("active");
+          });
+        });
+      },
+      { rootMargin: "-35% 0px -55% 0px", threshold: 0.01 }
+    );
+
+    sections.forEach((section) => activeObserver.observe(section));
+  }
+})();
